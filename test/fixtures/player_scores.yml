@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hole_score: 1
+  putts: 1
+  tee_accuracy: false
+  round: one
+
+two:
+  hole_score: 1
+  putts: 1
+  tee_accuracy: false
+  round: two

@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  number_of_holes: 1
+  has_transportation: false
+  address: MyString
+  website: MyString
+
+two:
+  name: MyString
+  number_of_holes: 1
+  has_transportation: false
+  address: MyString
+  website: MyString

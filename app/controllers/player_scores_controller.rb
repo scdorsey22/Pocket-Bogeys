@@ -1,0 +1,2 @@
+class PlayerScoresController < ApplicationController
+end

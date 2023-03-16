@@ -1,0 +1,2 @@
+class TeeColorsController < ApplicationController
+end
