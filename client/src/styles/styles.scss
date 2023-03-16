@@ -1,0 +1,40 @@
+$primary-color: #1A4D3F;
+
+.scorecard {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 18px;
+  margin-top: 100px;
+
+
+  th {
+    background-color: $primary-color;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+  }
+
+  td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+
+    input {
+      width: 40px;
+    }
+  }
+
+  tr:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+}
+
+
+
