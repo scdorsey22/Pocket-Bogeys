@@ -76,6 +76,12 @@ const Scorecard = () => {
   const [putts, setPutts] = useState(Array(holes.length).fill(""));
   const [fairways, setFairways] = useState(Array(holes.length).fill(false));
 
+  const handleReset = () => {
+      setScores(Array(holes.length).fill(""))
+      setPutts(Array(holes.length).gill(""))
+      setFairways(Array(holes.length).fill(false))
+  }
+
 
   const handleScoreChange = (e, index) => {
     const newScores = [...scores];
@@ -204,6 +210,7 @@ const Scorecard = () => {
           </tr>
         </tbody>
       </table>
+      <button className="reset-button" onClick={handleReset}>Reset</button>
     </>
   );
 };
