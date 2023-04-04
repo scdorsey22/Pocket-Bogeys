@@ -78,7 +78,7 @@ const Scorecard = () => {
 
   const handleReset = () => {
       setScores(Array(holes.length).fill(""))
-      setPutts(Array(holes.length).gill(""))
+      setPutts(Array(holes.length).fill(""))
       setFairways(Array(holes.length).fill(false))
   }
 
