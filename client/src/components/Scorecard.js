@@ -101,11 +101,10 @@ const Scorecard = () => {
     setFairways(newFairways);
   };
 
-
-  console.log(holes[0])
-  console.log(scores)
-  console.log(putts)
-  console.log(fairways)
+  // console.log(holes[0])
+  // console.log(scores)
+  // console.log(putts)
+  // console.log(fairways)
 
   const totalYardage = holes.reduce((sum, hole) => sum + hole.yardage, 0);
   const totalPar = holes.reduce((sum, hole) => sum + hole.par, 0);
