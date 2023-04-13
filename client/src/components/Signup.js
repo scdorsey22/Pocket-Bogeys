@@ -15,7 +15,7 @@ const Signup = () => {
 
 
     return (
-        <div>test</div>
+        <div></div>
     )
 }
 
