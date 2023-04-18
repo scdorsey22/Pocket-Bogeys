@@ -8,17 +8,18 @@ type FormProps = {
     confirmPassword: string
 }
 
-function Button({}){
+function Button( formValues: FormProps ){
 
-    // const {formValues} = FormProps
+    const {fullName, emailAddress, username, password, confirmPassword} = formValues
 
-    // function handleClick(){
-    //     console.log(formValues)
-    // }
+    function handleClick(e: any){
+        e.preventDefault()
+        console.log(fullName, emailAddress, username, password, confirmPassword)
+    }
 
     return(
         <>
-            <button className='btn' formAction='submit' >join</button>
+            <button className='btn' formAction='submit' onClick={handleClick}>join</button>
         </>
     )
 }
