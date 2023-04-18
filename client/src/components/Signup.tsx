@@ -9,13 +9,13 @@ const defaultValues = {
   confirmPassword: ''
 }
 
-const Signup= (): JSX.Element => {
+const Signup = (): JSX.Element => {
 
-  const [formValues, setFormValues] = React.useState(defaultValues) 
+  const [formValues, setFormValues] = React.useState(defaultValues)
   const [showPassword, setShowPassword] = React.useState<Boolean>(false)
 
-  const handleChange = (e: any) => {
-    const { name, value } = e.target
+  const handleChange = (e: React.ChangeEvent) => {
+    const { name, value } = e.target as HTMLTextAreaElement
     setFormValues({ ...formValues, [name]: value })
   }
 
@@ -29,7 +29,7 @@ const Signup= (): JSX.Element => {
     }
   }
 
-  const handleClick = (e: any) => {
+  const handleClick = (e: React.MouseEvent) => {
     e.preventDefault()
     formValues.password === formValues.confirmPassword ? 
       console.log(formValues) // route to home page with session for user

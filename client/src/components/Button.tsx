@@ -1,19 +1,24 @@
 import * as React from 'react';
 
 type FormProps = {
-    fullName: string,
-    emailAddress: string,
-    username: string,
-    password: string,
-    confirmPassword: string
+    formValues: {
+            fullName: string,
+            emailAddress: string,
+            username: string,
+            password: string,
+            confirmPassword: string
+    }
 }
 
-function Button( formValues: FormProps ){
+function Button( props: FormProps ){
 
-    const {fullName, emailAddress, username, password, confirmPassword} = formValues
+    const { formValues } = props
+    const { fullName, emailAddress, username, password, confirmPassword } = formValues
 
-    function handleClick(e: any){
+    function handleClick(e: React.MouseEvent){
         e.preventDefault()
+        console.log(props)
+        console.log(formValues)
         console.log(fullName, emailAddress, username, password, confirmPassword)
     }
 
