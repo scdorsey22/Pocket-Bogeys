@@ -8,23 +8,16 @@ type FormProps = {
             password: string,
             confirmPassword: string
     }
+    // handleSubmit: (e: React.MouseEvent) => void
 }
 
 function Button( props: FormProps ){
 
     const { formValues } = props
-    const { fullName, emailAddress, username, password, confirmPassword } = formValues
-
-    function handleClick(e: React.MouseEvent){
-        e.preventDefault()
-        console.log(props)
-        console.log(formValues)
-        console.log(fullName, emailAddress, username, password, confirmPassword)
-    }
 
     return(
         <>
-            <button className='btn' formAction='submit' onClick={handleClick}>join</button>
+            <button className='btn' type="submit">join</button>
         </>
     )
 }
